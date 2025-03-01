@@ -30,7 +30,6 @@ Partial Class WNDMain
         BTNStart = New Button()
         BTNInstructions = New Button()
         BTNContinue = New Button()
-        TBXInstructions = New TextBox()
         LBLDice1 = New Label()
         LBLDice2 = New Label()
         TBXDice1 = New TextBox()
@@ -44,6 +43,7 @@ Partial Class WNDMain
         BTNRestart = New Button()
         PBXDice1 = New PictureBox()
         PBXDice2 = New PictureBox()
+        TBXInstructions = New TextBox()
         CType(PBXDice1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PBXDice2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -105,7 +105,7 @@ Partial Class WNDMain
         ' BTNInstructions
         ' 
         BTNInstructions.Font = New Font("Comic Sans MS", 25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        BTNInstructions.Location = New Point(94, 226)
+        BTNInstructions.Location = New Point(101, 226)
         BTNInstructions.Name = "BTNInstructions"
         BTNInstructions.Size = New Size(245, 100)
         BTNInstructions.TabIndex = 5
@@ -116,25 +116,13 @@ Partial Class WNDMain
         ' BTNContinue
         ' 
         BTNContinue.Font = New Font("Comic Sans MS", 25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        BTNContinue.Location = New Point(645, 226)
+        BTNContinue.Location = New Point(652, 226)
         BTNContinue.Name = "BTNContinue"
         BTNContinue.Size = New Size(245, 100)
         BTNContinue.TabIndex = 6
         BTNContinue.Text = "Continuer!"
         BTNContinue.UseVisualStyleBackColor = True
         BTNContinue.Visible = False
-        ' 
-        ' TBXInstructions
-        ' 
-        TBXInstructions.Font = New Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TBXInstructions.Location = New Point(93, 185)
-        TBXInstructions.Multiline = True
-        TBXInstructions.Name = "TBXInstructions"
-        TBXInstructions.ReadOnly = True
-        TBXInstructions.Size = New Size(239, 195)
-        TBXInstructions.TabIndex = 7
-        TBXInstructions.Text = resources.GetString("TBXInstructions.Text")
-        TBXInstructions.Visible = False
         ' 
         ' LBLDice1
         ' 
@@ -267,7 +255,7 @@ Partial Class WNDMain
         ' 
         ' PBXDice1
         ' 
-        PBXDice1.Location = New Point(107, 100)
+        PBXDice1.Location = New Point(113, 100)
         PBXDice1.Name = "PBXDice1"
         PBXDice1.Size = New Size(256, 256)
         PBXDice1.TabIndex = 19
@@ -282,6 +270,18 @@ Partial Class WNDMain
         PBXDice2.TabIndex = 20
         PBXDice2.TabStop = False
         PBXDice2.Visible = False
+        ' 
+        ' TBXInstructions
+        ' 
+        TBXInstructions.Font = New Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TBXInstructions.Location = New Point(101, 175)
+        TBXInstructions.Multiline = True
+        TBXInstructions.Name = "TBXInstructions"
+        TBXInstructions.ReadOnly = True
+        TBXInstructions.Size = New Size(239, 195)
+        TBXInstructions.TabIndex = 7
+        TBXInstructions.Text = resources.GetString("TBXInstructions.Text")
+        TBXInstructions.Visible = False
         ' 
         ' WNDMain
         ' 
@@ -329,7 +329,6 @@ Partial Class WNDMain
     Friend WithEvents BTNStart As Button
     Friend WithEvents BTNInstructions As Button
     Friend WithEvents BTNContinue As Button
-    Friend WithEvents TBXInstructions As TextBox
     Friend WithEvents LBLDice1 As Label
     Friend WithEvents LBLDice2 As Label
     Friend WithEvents TBXDice1 As TextBox
@@ -343,5 +342,6 @@ Partial Class WNDMain
     Friend WithEvents BTNRestart As Button
     Friend WithEvents PBXDice1 As PictureBox
     Friend WithEvents PBXDice2 As PictureBox
+    Friend WithEvents TBXInstructions As TextBox
 
 End Class
