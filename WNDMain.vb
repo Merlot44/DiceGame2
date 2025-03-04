@@ -21,7 +21,10 @@ Public Class WNDMain
         ' Verify sound status
         If Sound = True Then
             ' Play the click sound
-            My.Computer.Audio.Play(My.Resources.Click, AudioPlayMode.Background)
+            My.Computer.Audio.Play(My.Resources.Click, AudioPlayMode.WaitToComplete)
+
+            ' Play the background music
+            My.Computer.Audio.Play(My.Resources.Music, AudioPlayMode.BackgroundLoop)
         End If
 
         ' Verify that the user entered their name
@@ -56,7 +59,10 @@ Public Class WNDMain
         ' Verify sound status
         If Sound = True Then
             ' Play the click sound
-            My.Computer.Audio.Play(My.Resources.Click, AudioPlayMode.Background)
+            My.Computer.Audio.Play(My.Resources.Click, AudioPlayMode.WaitToComplete)
+
+            ' Play the background music
+            My.Computer.Audio.Play(My.Resources.Music, AudioPlayMode.BackgroundLoop)
         End If
 
         ' Hide the button
@@ -70,7 +76,10 @@ Public Class WNDMain
         ' Verify sound status
         If Sound = True Then
             ' Play the click sound
-            My.Computer.Audio.Play(My.Resources.Click, AudioPlayMode.Background)
+            My.Computer.Audio.Play(My.Resources.Click, AudioPlayMode.WaitToComplete)
+
+            ' Play the background music
+            My.Computer.Audio.Play(My.Resources.Music, AudioPlayMode.BackgroundLoop)
         End If
 
         ' Hide used elements
@@ -97,8 +106,8 @@ Public Class WNDMain
             DiceGuess = CInt(TBXGuess.Text)
 
             ' Save random values from 1 to 6 for the dice roll
-            Dice1Roll = Rnd() * 6 + 1
-            Dice2Roll = Rnd() * 6 + 1
+            Dice1Roll = (Rnd() * 6) + 1
+            Dice2Roll = (Rnd() * 6) + 1
 
             ' Hide used elements
             LBLGuess.Visible = False
@@ -115,13 +124,13 @@ Public Class WNDMain
                 WonGames += 1
 
                 ' Play the win sound
-                My.Computer.Audio.Play(My.Resources.Win, AudioPlayMode.Background)
+                My.Computer.Audio.Play(My.Resources.Win, AudioPlayMode.WaitToComplete)
             Else
                 ' Announce the player's loss
                 LBLMain.Text = "Désolé " + PlayerName + ", vôtre choix (" + CStr(DiceGuess) + ") est incorrecte!"
 
                 ' Play the loss sound
-                My.Computer.Audio.Play(My.Resources.Loss, AudioPlayMode.Background)
+                My.Computer.Audio.Play(My.Resources.Loss, AudioPlayMode.WaitToComplete)
             End If
 
             ' Increment the number of played games
@@ -169,6 +178,9 @@ Public Class WNDMain
             PBXDice1.Visible = True
             PBXDice2.Visible = True
             BTNRetry.Visible = True
+
+            ' Play the background music
+            My.Computer.Audio.Play(My.Resources.Music, AudioPlayMode.BackgroundLoop)
         Else
             ' Show the dice guess hint
             LBLGuessHint.Visible = True
@@ -176,7 +188,10 @@ Public Class WNDMain
             ' Verify sound status
             If Sound = True Then
                 ' Play the click sound
-                My.Computer.Audio.Play(My.Resources.Click, AudioPlayMode.Background)
+                My.Computer.Audio.Play(My.Resources.Click, AudioPlayMode.WaitToComplete)
+
+                ' Play the background music
+                My.Computer.Audio.Play(My.Resources.Music, AudioPlayMode.BackgroundLoop)
             End If
         End If
     End Sub
@@ -189,7 +204,10 @@ Public Class WNDMain
         ' Verify sound status
         If Sound = True Then
             ' Play the click sound
-            My.Computer.Audio.Play(My.Resources.Click, AudioPlayMode.Background)
+            My.Computer.Audio.Play(My.Resources.Click, AudioPlayMode.WaitToComplete)
+
+            ' Play the background music
+            My.Computer.Audio.Play(My.Resources.Music, AudioPlayMode.BackgroundLoop)
         End If
 
         ' Hide used elements
@@ -220,7 +238,7 @@ Public Class WNDMain
 
         If Sound = True Then
             ' Play the click sound
-            My.Computer.Audio.Play(My.Resources.Click, AudioPlayMode.Background)
+            My.Computer.Audio.Play(My.Resources.Click, AudioPlayMode.WaitToComplete)
 
             ' Set the image to the green speaker
             PBXSound.Image = My.Resources.Unmute
