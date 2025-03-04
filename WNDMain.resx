@@ -120,11 +120,15 @@
   <data name="TBXInstructions.Text" xml:space="preserve">
     <value>Instructions :
 --------------
-Pour jouer, vous devez essayer de correctement deviner la valeur des dés
+Pour jouer, vous devez essayer de correctement deviner la somme de deux dés.
 
-Une fois deviné, vous devez peser le bouton intitulé «Deviner»
+1. Peser le bouton intitulé «Continuer».
+2. Entrer une valeure de 2 à 12 que vous avez deviné pour essayer de prédire la somme des deux dés.
+3. Peser le bouton intitulé «Deviner»
 
-Le jeux va ensuite vous informer si vous avex gagner et vous pouvez ensuite jouer à nouveau!</value>
+Le jeux va ensuite vous informer si vous avex gagner et vous pouvez ensuite jouer à nouveau!
+
+Vous pouver aussi peser le bouton de sons en haut à gauche pour éteindre ou allumer la musique et les effets sonores.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

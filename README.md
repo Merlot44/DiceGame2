@@ -5,7 +5,8 @@ This game is a remake of my Dice Game with improvements listed in the [improveme
 
 ## Improvements:
 Added a second dice for more complexity.  
-Added a background and changed the layout for a more user-friendly interface.
+Added a background and changed the layout for a more user-friendly interface.  
+Added sound effects and background music as well as a button to control them.
 
 ## Statistics of the game:
 Due to adding a second dice, the odds of winning are no longer 1/6 or 16.66%. Now, the odds have changed to the following:  
@@ -27,5 +28,4 @@ Chosen number: (number of possibilities that equals the chosen number / number o
 Therefore, players now have a higher sucess rate with the number 7 than with other numbers.
 
 ## Upcoming:
-Add sound effects and background music  
 Make a function to properly place elements

@@ -60,6 +60,7 @@ Partial Class WNDMain
         ' 
         ' TBXGuess
         ' 
+        TBXGuess.BackColor = Color.Beige
         TBXGuess.Location = New Point(463, 244)
         TBXGuess.Name = "TBXGuess"
         TBXGuess.Size = New Size(87, 23)
@@ -68,20 +69,21 @@ Partial Class WNDMain
         ' 
         ' BTNRetry
         ' 
+        BTNRetry.BackColor = Color.Beige
         BTNRetry.Font = New Font("Comic Sans MS", 30F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         BTNRetry.Location = New Point(346, 270)
         BTNRetry.Name = "BTNRetry"
         BTNRetry.Size = New Size(313, 81)
         BTNRetry.TabIndex = 37
         BTNRetry.Text = "Réessayer!"
-        BTNRetry.UseVisualStyleBackColor = True
+        BTNRetry.UseVisualStyleBackColor = False
         BTNRetry.Visible = False
         ' 
         ' LBLWonGames
         ' 
         LBLWonGames.BackColor = Color.Transparent
         LBLWonGames.Font = New Font("Comic Sans MS", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LBLWonGames.ForeColor = Color.White
+        LBLWonGames.ForeColor = Color.Beige
         LBLWonGames.Location = New Point(372, 504)
         LBLWonGames.Name = "LBLWonGames"
         LBLWonGames.Size = New Size(268, 28)
@@ -94,7 +96,7 @@ Partial Class WNDMain
         ' 
         LBLPlayedGames.BackColor = Color.Transparent
         LBLPlayedGames.Font = New Font("Comic Sans MS", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LBLPlayedGames.ForeColor = Color.White
+        LBLPlayedGames.ForeColor = Color.Beige
         LBLPlayedGames.Location = New Point(2, 504)
         LBLPlayedGames.Name = "LBLPlayedGames"
         LBLPlayedGames.Size = New Size(344, 28)
@@ -105,13 +107,14 @@ Partial Class WNDMain
         ' 
         ' BTNGuess
         ' 
+        BTNGuess.BackColor = Color.Beige
         BTNGuess.Font = New Font("Comic Sans MS", 30F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         BTNGuess.Location = New Point(372, 397)
         BTNGuess.Name = "BTNGuess"
         BTNGuess.Size = New Size(268, 81)
         BTNGuess.TabIndex = 33
         BTNGuess.Text = "Deviner!"
-        BTNGuess.UseVisualStyleBackColor = True
+        BTNGuess.UseVisualStyleBackColor = False
         BTNGuess.Visible = False
         ' 
         ' LBLGuessHint
@@ -119,7 +122,7 @@ Partial Class WNDMain
         LBLGuessHint.AutoSize = True
         LBLGuessHint.BackColor = Color.Transparent
         LBLGuessHint.Font = New Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LBLGuessHint.ForeColor = Color.White
+        LBLGuessHint.ForeColor = Color.Beige
         LBLGuessHint.Location = New Point(404, 270)
         LBLGuessHint.Name = "LBLGuessHint"
         LBLGuessHint.Size = New Size(208, 17)
@@ -132,7 +135,7 @@ Partial Class WNDMain
         LBLGuess.AutoSize = True
         LBLGuess.BackColor = Color.Transparent
         LBLGuess.Font = New Font("Comic Sans MS", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LBLGuess.ForeColor = Color.White
+        LBLGuess.ForeColor = Color.Beige
         LBLGuess.Location = New Point(447, 203)
         LBLGuess.Name = "LBLGuess"
         LBLGuess.Size = New Size(123, 38)
@@ -142,35 +145,38 @@ Partial Class WNDMain
         ' 
         ' BTNContinue
         ' 
+        BTNContinue.BackColor = Color.Beige
         BTNContinue.Font = New Font("Comic Sans MS", 25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         BTNContinue.Location = New Point(652, 230)
         BTNContinue.Name = "BTNContinue"
         BTNContinue.Size = New Size(245, 100)
         BTNContinue.TabIndex = 29
         BTNContinue.Text = "Continuer!"
-        BTNContinue.UseVisualStyleBackColor = True
+        BTNContinue.UseVisualStyleBackColor = False
         BTNContinue.Visible = False
         ' 
         ' BTNInstructions
         ' 
+        BTNInstructions.BackColor = Color.Beige
         BTNInstructions.Font = New Font("Comic Sans MS", 25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         BTNInstructions.Location = New Point(101, 230)
         BTNInstructions.Name = "BTNInstructions"
         BTNInstructions.Size = New Size(245, 100)
         BTNInstructions.TabIndex = 28
         BTNInstructions.Text = "Instructions"
-        BTNInstructions.UseVisualStyleBackColor = True
+        BTNInstructions.UseVisualStyleBackColor = False
         BTNInstructions.Visible = False
         ' 
         ' BTNStart
         ' 
+        BTNStart.BackColor = Color.Beige
         BTNStart.Font = New Font("Comic Sans MS", 30F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         BTNStart.Location = New Point(372, 397)
         BTNStart.Name = "BTNStart"
         BTNStart.Size = New Size(268, 81)
         BTNStart.TabIndex = 27
         BTNStart.Text = "Commencer!"
-        BTNStart.UseVisualStyleBackColor = True
+        BTNStart.UseVisualStyleBackColor = False
         ' 
         ' LBLNameHint
         ' 
@@ -187,6 +193,7 @@ Partial Class WNDMain
         ' 
         ' TBXName
         ' 
+        TBXName.BackColor = Color.Beige
         TBXName.Location = New Point(346, 244)
         TBXName.Name = "TBXName"
         TBXName.Size = New Size(347, 23)
@@ -226,12 +233,13 @@ Partial Class WNDMain
         ' 
         ' TBXInstructions
         ' 
-        TBXInstructions.Font = New Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TBXInstructions.Location = New Point(101, 179)
+        TBXInstructions.BackColor = Color.Beige
+        TBXInstructions.Font = New Font("Comic Sans MS", 11F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TBXInstructions.Location = New Point(59, 140)
         TBXInstructions.Multiline = True
         TBXInstructions.Name = "TBXInstructions"
         TBXInstructions.ReadOnly = True
-        TBXInstructions.Size = New Size(239, 195)
+        TBXInstructions.Size = New Size(452, 311)
         TBXInstructions.TabIndex = 30
         TBXInstructions.Text = resources.GetString("TBXInstructions.Text")
         TBXInstructions.Visible = False
@@ -252,7 +260,7 @@ Partial Class WNDMain
         ' 
         LBLWinPercentage.BackColor = Color.Transparent
         LBLWinPercentage.Font = New Font("Comic Sans MS", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LBLWinPercentage.ForeColor = Color.White
+        LBLWinPercentage.ForeColor = Color.Beige
         LBLWinPercentage.Location = New Point(652, 504)
         LBLWinPercentage.Name = "LBLWinPercentage"
         LBLWinPercentage.Size = New Size(355, 28)
@@ -268,6 +276,7 @@ Partial Class WNDMain
         BackgroundImage = My.Resources.Resources.Background
         BackgroundImageLayout = ImageLayout.Center
         ClientSize = New Size(1008, 537)
+        Controls.Add(TBXInstructions)
         Controls.Add(PBXSound)
         Controls.Add(TBXGuess)
         Controls.Add(BTNRetry)
@@ -284,7 +293,6 @@ Partial Class WNDMain
         Controls.Add(LBLName)
         Controls.Add(PBXDice1)
         Controls.Add(PBXDice2)
-        Controls.Add(TBXInstructions)
         Controls.Add(LBLMain)
         Controls.Add(LBLWinPercentage)
         FormBorderStyle = FormBorderStyle.FixedSingle
