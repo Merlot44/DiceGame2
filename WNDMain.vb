@@ -124,7 +124,7 @@ Public Class WNDMain
             ' Compare the player's guess to the die roll
             If DiceGuess = Dice1Roll + Dice2Roll Then
                 ' Announce the player's win
-                LBLMain.Text = "Félicitations " + PlayerName + ", vôtre choix (" + CStr(DiceGuess) + ") est correcte!"
+                LBLMain.Text = "Félicitations " + PlayerName + ", vôtre choix (" + CStr(DiceGuess) + ") est correct!"
 
                 ' Increment the number of won games
                 WonGames += 1
@@ -133,7 +133,7 @@ Public Class WNDMain
                 My.Computer.Audio.Play(My.Resources.Win, AudioPlayMode.WaitToComplete)
             Else
                 ' Announce the player's loss
-                LBLMain.Text = "Désolé " + PlayerName + ", vôtre choix (" + CStr(DiceGuess) + ") est incorrecte!"
+                LBLMain.Text = "Désolé " + PlayerName + ", vôtre choix (" + CStr(DiceGuess) + ") est incorrect!"
 
                 ' Play the loss sound
                 My.Computer.Audio.Play(My.Resources.Loss, AudioPlayMode.WaitToComplete)
