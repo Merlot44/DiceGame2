@@ -1,4 +1,10 @@
-﻿Imports System.Security.Authentication.ExtendedProtection
+﻿' Dice Game 2
+' By Merlot44
+' Date: 3/4/2025
+' Version: 1.0.0
+' Github Repository : www.github.com/Merlot44/DiceGame2/
+
+Imports System.Security.Authentication.ExtendedProtection
 Public Class WNDMain
     ' Define a variable for the player's name
     Public PlayerName As String = "joueur"
