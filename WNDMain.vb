@@ -133,6 +133,9 @@ Public Class WNDMain
                 My.Computer.Audio.Play(My.Resources.Loss, AudioPlayMode.WaitToComplete)
             End If
 
+            ' Play the background music
+            My.Computer.Audio.Play(My.Resources.Music, AudioPlayMode.BackgroundLoop)
+
             ' Increment the number of played games
             PlayedGames += 1
 
@@ -178,9 +181,6 @@ Public Class WNDMain
             PBXDice1.Visible = True
             PBXDice2.Visible = True
             BTNRetry.Visible = True
-
-            ' Play the background music
-            My.Computer.Audio.Play(My.Resources.Music, AudioPlayMode.BackgroundLoop)
         Else
             ' Show the dice guess hint
             LBLGuessHint.Visible = True
