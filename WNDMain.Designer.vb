@@ -265,7 +265,7 @@ Partial Class WNDMain
         LBLWinPercentage.Name = "LBLWinPercentage"
         LBLWinPercentage.Size = New Size(355, 28)
         LBLWinPercentage.TabIndex = 36
-        LBLWinPercentage.Text = "Pourcentage de victoire : 0%"
+        LBLWinPercentage.Text = "Pourcentage de réussite : 0%"
         LBLWinPercentage.TextAlign = ContentAlignment.MiddleRight
         LBLWinPercentage.Visible = False
         ' 
