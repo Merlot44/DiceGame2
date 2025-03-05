@@ -235,11 +235,11 @@ Partial Class WNDMain
         ' 
         TBXInstructions.BackColor = Color.Beige
         TBXInstructions.Font = New Font("Comic Sans MS", 11F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TBXInstructions.Location = New Point(59, 140)
+        TBXInstructions.Location = New Point(32, 115)
         TBXInstructions.Multiline = True
         TBXInstructions.Name = "TBXInstructions"
         TBXInstructions.ReadOnly = True
-        TBXInstructions.Size = New Size(452, 311)
+        TBXInstructions.Size = New Size(538, 373)
         TBXInstructions.TabIndex = 30
         TBXInstructions.Text = resources.GetString("TBXInstructions.Text")
         TBXInstructions.Visible = False

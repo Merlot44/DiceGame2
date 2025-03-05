@@ -260,7 +260,7 @@ Public Class WNDMain
         End If
     End Sub
 
-    Private Sub WNDMain_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub WNDMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Play the background music
         My.Computer.Audio.Play(My.Resources.Music, AudioPlayMode.BackgroundLoop)
     End Sub
